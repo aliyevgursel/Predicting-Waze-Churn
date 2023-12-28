@@ -28,9 +28,19 @@ The data had missing values for the churn status for about 700 users. However, t
 
 
 
+
 **Modeling and Evaluation**
 
-This section should detail what models you used and the corresponding evaluation metrics. 
+The dataset was split into train/validate/test (60%, 20%, 20%) datasets. The models were trained and cross-validated with the train datset. The validation dataset was used to select the "best" model. The 'best' model was the XGB model. However, even this model did not predict user churn very well. Therefore there is a need to improve the model.
+
+![image](https://github.com/aliyevgursel/Predicting-Waze-Churn/assets/68837397/643e2e6d-1722-4fb7-ab84-2f98a0e80d6f)
+
+The engineered features accounted for six of the top 10 features (and three of the top five).
+
+![image](https://github.com/aliyevgursel/Predicting-Waze-Churn/assets/68837397/06031fec-ec0e-46de-a757-3f95fdb0a9dc)
+
+ 
 
 **Conclusion**
-In the conclusion section explain the recommendations you have in solving the business problem and highlight any future steps you will take to expand on your project
+While the best model can be useful to identify relationships between the churn status and user characteristics, it is not a very good model for the prediction.
+Conducting further hyperparameter tuning might improve the model. Increasing sample size might also help. Balancing the data might also help since the dataset is moderately imbalanced. Perhaps we can also add some more features that are likely to be correlated with the churn status. Examples to such features could be a) whether users' primary geographic area is a heavy-trafficked urban area or not; b) car ownership; c) commuting distance etc.
