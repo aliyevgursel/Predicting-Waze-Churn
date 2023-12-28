@@ -41,6 +41,9 @@ The engineered features accounted for six of the top 10 features (and three of t
 
  
 
+** **
+
 **Conclusion**
+
 While the best model can be useful to identify relationships between the churn status and user characteristics, it is not a very good model for the prediction.
 Conducting further hyperparameter tuning might improve the model. Increasing sample size might also help. Balancing the data might also help since the dataset is moderately imbalanced. Perhaps we can also add some more features that are likely to be correlated with the churn status. Examples to such features could be a) whether users' primary geographic area is a heavy-trafficked urban area or not; b) car ownership; c) commuting distance etc.
